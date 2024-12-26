@@ -141,6 +141,7 @@ ylabel('amplitude--->');
 title('Convolved output'); 
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Output: 
 
@@ -162,3 +163,69 @@ OUTPUT WAVEFORMS:
  
 
 RESULT:
+
+VIVA QUESTIONS: 
+1. Explain the significance of convolution. 
+
+Convolution helps us understand how a system reacts to an input signal.
+It's widely used in signal processing, image processing,
+and communication systems to analyze how signals interact with systems.
+
+2. Define linear convolution. 
+
+Linear convolution is a mathematical way to combine two signals, showing how one signal modifies the other. 
+It’s like blending two sequences to see their combined effect.
+
+3. Why linear convolution is called as a periodic convolution? 
+
+Actually, linear convolution and periodic convolution are different. 
+Periodic convolution happens in systems with repeating signals, like in Fourier series. 
+Linear convolution deals with signals that don’t repeat.
+
+
+4. Why zero padding is used in linear convolution? 
+
+Zero padding is used to ensure the output of convolution matches the desired length. 
+It helps in avoiding overlap when signals are being processed.
+
+5. What are the four steps to find linear convolution? 
+
+- Reverse one of the signals.
+  
+- Shift it relative to the other signal.
+
+- Multiply the overlapping points.
+
+- Sum the results for each shift.
+  
+
+6. What is the length of the resultant sequence in linear convolution? 
+
+The length of the output sequence is the sum of the lengths of the two input 
+sequences, minus one. For signals of length 𝑀 and 𝑁, the result is 𝑀+𝑁−1.
+
+7. How linear convolution will be used in calculation of LTI system response? 
+
+Linear convolution is key for finding the output of an LTI system. 
+By convolving the input signal with the system’s impulse response, 
+we can predict how the system will behave.
+
+8. List few applications of linear convolution in LTI system design. 
+
+It's used in signal filtering, system analysis, audio processing, 
+image processing, and communication systems to model and design responses.
+
+9. Give the properties of linear convolution. 
+
+![image](https://github.com/user-attachments/assets/a920d27f-0597-4a8b-b0a2-4f786cc160b9)
+
+
+10. How the linear convolution will be used to calculate the DFT of a signal?
+
+By performing zero padding and using the overlap-save or overlap-add methods, 
+linear convolution can be computed efficiently in the frequency domain 
+using the Discrete Fourier Transform (DFT).
+
+
+
+
